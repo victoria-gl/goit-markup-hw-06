@@ -420,6 +420,11 @@ address {
 }
 
 /* What we do  */
+@media only screen and (max-width: 1157.98px) {
+  .whatwedo {
+    display: none;
+  }
+}
 
 .whatwedo {
   padding-bottom: 120px;
@@ -572,8 +577,13 @@ address {
 /* Customers */
 
 .ourclients {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 96px 0;
+}
+
+@media screen and (min-width: 1158px) {
+  .ourclients {
+    padding: 120px 0;
+  }
 }
 
 .customers-title {
@@ -591,10 +601,23 @@ address {
 
 .customers-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+@media screen and (min-width: 768px) {
+.customers-list {
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+.customers-list {
+    flex-wrap: nowrap;
+      justify-content: center;
+  }
 }
 
 .customers-list-link {
@@ -619,9 +642,16 @@ address {
 .customers-list-item {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
+
+@media screen and (min-width: 768px) {
+.customers-list-item {
+  width: calc((100% - 48px) / 3);
+  }
+}
+
 
 .customers-list-logo {
   fill: currentColor;
