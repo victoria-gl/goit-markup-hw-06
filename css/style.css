@@ -742,16 +742,39 @@ max-width: 320px;
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+padding: 96px 0;
+
+}
+
+@media only screen and (min-width: 1158px) {
+ .footer  {
+      padding: 100px 0;
+  }
 }
 
 .webstudio-container {
-  margin-right: 120px;
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .webstudio-container  {
+      margin-right: 24px;
+  }
+}
+
+
+@media only screen and (min-width: 1158px) {
+  .webstudio-container {
+      margin-right: 120px;
+  }
 }
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 72px;
+  align-items: center;
+  align-content: center;
 }
 
 .footer-link {
