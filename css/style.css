@@ -52,10 +52,33 @@ img {
   height: auto;
 }
 
+/* Phones screen */
+
 .container {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+  min-width: 320px;
+  max-width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
 }
 
 .visually-hidden {
