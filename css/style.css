@@ -55,9 +55,6 @@ img {
 /* Phones screen */
 
 .container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
   min-width: 320px;
   max-width: 428px;
   margin-left: auto;
@@ -293,8 +290,7 @@ padding: 16px 0;
 /* Main */
 
 .hero {
-  padding: 112px;
-  /* padding: 188px 0; */
+  padding: 112px 0;
   align-items: center;
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -304,26 +300,55 @@ padding: 16px 0;
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1440px;
   margin: 0 auto;
   background-size: cover;
 }
 
-.main-div-container {
-  min-width: 496px;
-  align-items: center;
+@media only screen and (min-width: 1558px) {
+   .hero {
+      padding: 188px 0;
+        max-width: 1440px;
+  }
 }
+
+.main-div-container {
+}
+
 .hero-title {
-  color: #ffffff;
-  font-family: 'Roboto' sans-serif;
+color: #ffffff;
+font-family: 'Roboto' sans-serif;
+text-align: center;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+ line-height: 1.07;
+letter-spacing: 0.72px;
+text-transform: capitalize;
+margin: auto ;
+margin-bottom: 72px;
+max-width: 320px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+   .hero-title{
+    margin-bottom: 36px;
+  }
+}
+
+@media only screen and (min-width: 1558px) {
+   .hero-title {
+    margin-bottom: 48px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+ .hero-title   {
   font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.07;
   letter-spacing: 1.12px;
-  text-align: center;
   max-width: 496px;
   margin: 0 auto 44px auto;
+  }
 }
 
 .hero-btn {
