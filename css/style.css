@@ -446,8 +446,15 @@ address {
 
 .ourteam {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0px;
 }
+
+@media screen and (min-width: 1158px) {
+  .ourteam {
+    padding: 120px 0;
+  }
+}
+
 .ourteam-title {
   color: #2e2f42;
   text-align: center;
@@ -462,16 +469,37 @@ address {
 }
 .ourteam-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  justify-content: center;
 }
+
+@media only screen and (min-width: 768px) {
+  .ourteam-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .advantages-list {
+    gap: 24px;
+  }
+}
+
 .ourteam-list-item {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+@media only screen and (min-width: 1158px) {
+  .ourteam-list-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
 
 .team-div {
