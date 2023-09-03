@@ -305,32 +305,54 @@ address {
 
 /* Advantages */
 
-.advantages {
-  padding: 120px 0;
+.advantages.section {
+  padding: 96px 0;
+}
+
+@media screen and (min-width: 1158px) {
+  .advantages.section {
+    padding: 120px 0;
+  }
 }
 .advantages-hero {
 }
 .advantages-list {
-  display: flex;
-  gap: 24px;
 }
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+    gap: 24px;
+  }
+}
+
 .advantages-list-item {
   width: calc((100% - 72px) / 4);
 }
 
 .advantages-icons-box {
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  flex-shrink: 0;
-  margin-bottom: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+@media screen and (min-width: 1158px) {
+  .advantages-icons-box {
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .advantages-icons {
+}
+
+@media screen and (max-width: 1157.98px) {
+  .advantages-icons {
+    display: none;
+  }
 }
 
 .advantages-list-title {
