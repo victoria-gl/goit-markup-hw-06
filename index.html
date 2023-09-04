@@ -467,17 +467,69 @@
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-            <svg class="menu-close-icon" width="8" height="8">
-                <use href="./images/icons.svg#icon-close-tag"></use>
+            <svg class="menu-close-icon" width="8" height="8" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <use href="./images/icons.svg#icon-close-mob"></use>
             </svg>
         </button>
-
-        <ul class="mobile-menu">
-            <li><a href="" class="link">Studio</a></li>
-            <li><a href="" class="link">Portfolio</a></li>
-            <li><a href="" class="link">Contacts</a></li>
+        <ul class="list mobile-menu">
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link mobile-menu-link-st link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
         </ul>
+        </nav>
+        <address class="mobile-menu-navigation">
+            <ul class="list list-mobile-menu-navigation">
+                <li class="li-mobile-menu-tel"><a class="link-mobile-menu-tel link" href="tel:+110001111111">+11 (000)
+                        111-11-11</a></li>
+                <li class="link-mobile-menu-mail"><a class="link-mobile-menu-mail link"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+        </address>
+        <div class="mobile-sm-div">
+            <ul class="mobile-media-list list">
+                <li class="mobile-media-list-item">
+                    <a class="menu-sm-link" href="http://instagram.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="instagram icon">
+                        <svg class="soc_media-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-media-list-item">
+                    <a class="menu-sm-link" href="http://twitter.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="twitter icon">
+                        <svg class="soc_media-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-media-list-item">
+                    <a class="menu-sm-link" href="http://facebook.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="facebook icon">
+                        <svg class="soc_media-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-media-list-item">
+                    <a class="menu-sm-link" href="http://linkedin.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="linkedin icon">
+                        <svg class="soc_media-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+    <script src="./js/modal.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
