@@ -885,7 +885,7 @@ padding: 96px 0;
   flex-direction: column;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1158px) {
  .socialmedia-container  {
     margin-right: 80px;
   }
