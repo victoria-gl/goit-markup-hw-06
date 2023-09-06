@@ -778,20 +778,21 @@ padding: 96px 0;
 .footer-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   row-gap: 72px;
-  padding-left: 108px;
 }
 
-@media only screen and (min-width: 768px) {
-  .footer-container {
-    column-gap: 24px;
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+   {
+      justify-content: flex-start;
+        column-gap: 24px;
+           padding-left: 108px;
   }
 }
 
 @media only screen and (min-width: 1158px) {
     .footer-container {
   flex-wrap: nowrap;
-  padding-left: 0;
   }
 }
 
@@ -885,6 +886,13 @@ padding: 96px 0;
   display: flex;
   flex-direction: column;
 }
+
+@media only screen and (min-width: 768px) {
+ .socialmedia-container  {
+    margin-right: 80px;
+  }
+}
+
 .footer-socialmedias {
   display: flex;
   gap: 16px;
