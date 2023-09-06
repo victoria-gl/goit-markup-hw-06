@@ -780,15 +780,11 @@ padding: 96px 0;
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 72px;
-  align-items: center;
-  align-content: center;
 }
 
 @media only screen and (min-width: 768px) {
   .footer-container {
     column-gap: 24px;
-  padding-left:92px;
-  justify-content: flex-start;
   }
 }
 
@@ -800,7 +796,8 @@ padding: 96px 0;
 }
 
 .webstudio-container {
-
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -819,8 +816,14 @@ padding: 96px 0;
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  display: inline-block;
   margin-bottom: 16px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 767.98px) {
+  .footer-link {
+      text-align: start;
+  }
 }
 
 .span-footer {
@@ -835,7 +838,6 @@ padding: 96px 0;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
- 
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1157.98px) {
@@ -854,7 +856,13 @@ padding: 96px 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-  gap: 16px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 767.98px) {
+.footer-title {
+      text-align: start;
+  }
 }
 
 .footer-sm-link {
@@ -876,9 +884,6 @@ padding: 96px 0;
 .socialmedia-container {
   display: flex;
   flex-direction: column;
-align-items: flex-start;
-margin-bottom: 30px;
-  margin-right: 53px;
 }
 .footer-socialmedias {
   display: flex;
@@ -898,8 +903,13 @@ margin-bottom: 30px;
 
 .footer-form-div{
     width: 100%;
-
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+   {
+  }
+}
+
 
 @media only screen and (min-width: 768px) {
 .footer-form-div {
@@ -911,11 +921,7 @@ margin-bottom: 30px;
      width: 100%;
   }
 }
-.footer-title {
-  display: flex;
-  justify-content: center;
 
-}
 
 .footer-form-input {
   height: 40px;
@@ -930,8 +936,9 @@ margin-bottom: 30px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   width: 100%;
-   margin-bottom: 16px;
+  margin-bottom: 16px;
 }
+
 
 @media only screen and (min-width: 768px) {
   .footer-form {
